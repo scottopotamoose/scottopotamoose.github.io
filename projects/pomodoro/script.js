@@ -2,8 +2,8 @@ let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 const buttons = document.querySelectorAll('[data-time]');
 const buttonStop = document.querySelector('.stop');
-var alarm = new Audio("/alarmbeep.wav");
-let clickSound = () => new Audio("/click.wav").play();
+var alarm = new Audio("/projects/pomdoro/alarmbeep.wav");
+let clickSound = () => new Audio("/projects/pomdoro/click.wav").play();
 
 function timer(seconds) {
     clearInterval(countdown);
