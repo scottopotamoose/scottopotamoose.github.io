@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pomodoro</title>
+
+        <link rel="stylesheet" href="stylesheet.css"/>
+        
+    </head>
+
+    <body>
+        <main>         
+            <div class="timer">
+                <div class="timer__controls">
+                    <p>Time in Minutes:</p>
+                    <button onclick="clickSound()" data-time="300" class="timer__button">5</button>
+                    <button onclick="clickSound()" data-time="600" class="timer__button">10</button>
+                    <button onclick="clickSound()" data-time="900" class="timer__button">15</button>
+                    <button onclick="clickSound()" data-time="1800" class="timer__button">30</button>
+                    <button onclick="clickSound()" data-time="2700" class="timer__button">45</button>
+                    <button onclick="clickSound()" data-time="3600" class="timer__button">60</button>
+                    <form name="customForm" id="custom">
+                        <input type="text" name="minutes" placeholder="Custom time (in minutes)">
+                    </form>
+                </div>
+                <br><br><br><br><br>
+                <div class="display">
+                    <h1 class="display__time-left">00:00</h1>
+                </div>
+                <button class="stop" onclick="clickSound()">STOP</button>
+            </div>
+            <script src="script.js"></script>
+        </main>
+            <div class="hidden">
+                <audio src="https://soundbible.com/2155-Text-Message-Alert-2.html" data-sound="alert"></audio>
+                <audio src="https://soundbible.com/119-Button-Push-Sound.html" data-sound="buttonpress"></audio>
+            </div>
+            
+    </body>
+</html>
