@@ -59,18 +59,6 @@ footer{
   li {
     padding-left: 10px;
   }
-  li a {
-    display: block;
-    color: #222;
-    text-align: center;
-    text-decoration: none;
-  }
-  li a:hover {
-    background-color: #222;
-  }
-  li a.current{
-    background-color: #DDD;
-  }
 
   a{
     color: #BBB;
